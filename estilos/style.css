@@ -48,3 +48,8 @@ header {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
+
+#foto1 {
+  display: block;
+  height: 10em;
+}
