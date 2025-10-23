@@ -232,11 +232,23 @@ article h2 {
   border-radius: 8px;
 }
 
+#projeto-container .titulo {
+  margin-bottom: 5px;
+  background-image: linear-gradient(to right, var(--destaque-inverso), transparent);
+}
+
 #projeto-container summary {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   cursor: pointer;
   margin-top: 10px;
+}
+
+#projeto-container .paragrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--destaque-inverso);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 @media screen and (min-width: 768px) {
