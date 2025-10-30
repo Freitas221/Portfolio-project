@@ -24,6 +24,7 @@ botao.addEventListener('click', () => {
 
 // Scroll suave para links de navegação
 const navLinks = document.querySelectorAll('#menu ul a.link');
+
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
