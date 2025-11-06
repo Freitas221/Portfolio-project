@@ -38,3 +38,26 @@ navLinks.forEach(link => {
     }
   });
 });
+
+document.querySelectorAll("details.descricao").forEach(details => {
+  const texto = details.querySelector(".paragrafo");
+
+  // Quando abrir ou fechar
+  details.addEventListener("toggle", () => {
+    if (details.open) {
+      const altura = texto.scrollHeight;
+      texto.style.height = altura + "px";
+
+      texto.addEventListener("transitionend", () => {
+        texto.style.height = "auto";
+      }, { once: true });
+
+    } else {
+      const altura = texto.scrollHeight;
+      texto.style.height = altura + "px";
+      requestAnimationFrame(() => {
+        texto.style.height = "0";
+      });
+    }
+  });
+});
