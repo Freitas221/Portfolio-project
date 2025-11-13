@@ -83,6 +83,20 @@ outline: 5px solid var(--destaque);
 display: block;
 margin: auto;
 margin-bottom: 15px;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+section#ficha .foto1:hover {
+  cursor: pointer;
+  border: 7px solid var(--fundo-card);
+  outline: 6px solid var(--destaque);
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 section#ficha h1 {
@@ -90,16 +104,38 @@ section#ficha h1 {
   margin:15px 0px;
   font-size: 1.5em;
   text-align: left;
+  border-bottom: 1px solid var(--destaque-inverso);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: aparecer 0.8s ease forwards;
+  animation-delay: 0.2s;
 }
+
+section#ficha p {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: aparecer 0.8s ease forwards;
+}
+
 
 div#social {
  display: flex;
  justify-content: center;
- align-items: center;
  font-size: 1.5em;
  gap: 1.5em;
- margin-top: 15px;
+ background-image: linear-gradient(45deg, rgba(197, 18, 251, 0.375), rgba(234, 255, 0, 0.437), rgb(224, 175, 242));
+ border-radius: 50px;
+ padding: 3px;
+ width: 200px;
+ margin: 40px auto 0px auto;
+ opacity: 0;
+ transform: translateY(10px);
+ animation: aparecer 0.8s ease forwards;
+ animation-delay: 0.2s;
+}
 
+div#social:hover {
+  background: linear-gradient(to right, rgba(227, 248, 0, 0.578), rgba(169, 18, 215, 0.375));
 }
 
 div#social a {
