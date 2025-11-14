@@ -42,6 +42,17 @@ header {
   list-style: none;
   display: flex;
   gap: 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: aparecer 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #menu a{
@@ -90,13 +101,6 @@ section#ficha .foto1:hover {
   cursor: pointer;
   border: 7px solid var(--fundo-card);
   outline: 6px solid var(--destaque);
-}
-
-@keyframes aparecer {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 section#ficha h1 {
@@ -157,6 +161,10 @@ article {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: aparecer 0.8s ease forwards;
+  animation-delay: 0.2s;
 }
 
 article h2 {
