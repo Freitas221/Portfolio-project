@@ -38,6 +38,13 @@ header {
   z-index: 1;
 }
 
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #menu ul{
   list-style: none;
   display: flex;
@@ -46,13 +53,6 @@ header {
   transform: translateY(10px);
   animation: aparecer 0.8s ease forwards;
   animation-delay: 0.2s;
-}
-
-@keyframes aparecer {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 #menu a{
@@ -286,9 +286,15 @@ article h2 {
   font-weight: bolder;
 }
 
-#projeto-container .foto {
-  width: 100%;
+#projeto-container .cont {
+  display: block;
+  text-decoration: none;
+}
+
+#projeto-container .cont .foto {
+  display: block;
   aspect-ratio: 16/9;
+  max-width: 78vw;
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
@@ -332,7 +338,7 @@ article h2 {
     max-width: 80%;
   }
 
-  #projeto-container .foto {
+  #projeto-container a .foto {
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 150px;
