@@ -265,7 +265,7 @@ article h2 {
 #projeto-container .projeto {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   background-color: var(--fundo-principal);
   padding: 10px;
   border-radius: 8px;
@@ -286,12 +286,12 @@ article h2 {
   font-weight: bolder;
 }
 
-#projeto-container .cont {
+#projeto-container .direction {
   display: block;
   text-decoration: none;
 }
 
-#projeto-container .cont .foto {
+#projeto-container .direction .foto {
   display: block;
   aspect-ratio: 16/9;
   max-width: 78vw;
@@ -337,10 +337,11 @@ article h2 {
   #projeto-container .projeto-info {
     max-width: 80%;
   }
-
-  #projeto-container a .foto {
+  
+  #projeto-container .direction .foto {
+    display: block;
+    width: 300px;
+    height: 200px;
     aspect-ratio: 1/1;
-    max-width: 20%;
-    max-height: 150px;
   }
 }

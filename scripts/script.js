@@ -39,10 +39,10 @@ navLinks.forEach(link => {
   });
 });
 
+// Quando abrir ou fechar
 document.querySelectorAll("details.descricao").forEach(details => {
   const texto = details.querySelector(".paragrafo");
 
-  // Quando abrir ou fechar
   details.addEventListener("toggle", () => {
     if (details.open) {
       const altura = texto.scrollHeight;
