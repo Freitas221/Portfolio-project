@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-
 }
 
 :root {
@@ -304,7 +302,7 @@ article h2 {
   margin: 10px 0px 3px 0px;
   background-image: linear-gradient(to right, var(--destaque-inverso), transparent);
   padding: 2px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 #projeto-container .descricao {
@@ -328,10 +326,27 @@ article h2 {
   transition: height 0.3s ease;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   
   #skill-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  main {
+    display: grid;  
+    grid-template-columns: auto 30vw 60vw auto;
+
+  }
+
+  section#ficha {
+    grid-column: 2;
+    height: 660px;
+    position: sticky;
+    top: 60px; 
+  }
+
+  section#detalhes {
+    grid-column: 3;
   }
 
   #projeto-container .projeto {
@@ -343,16 +358,6 @@ article h2 {
     max-width: 80%;
   }
   
-  #projeto-container .direction .foto {
-    display: block;
-    width: 300px;
-    height: 200px;
-    aspect-ratio: 1/1;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-
   #projeto-container .direction .foto {
     display: block;
     width: 300px;
