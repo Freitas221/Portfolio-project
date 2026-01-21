@@ -23,7 +23,18 @@ body {
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto); 
+  transition: background-color 0.5s, color 0.5s;
 }
+
+body.escuro {
+    --fundo-principal: #222222;
+    --texto: #e0e0e0;
+    --texto-inverso: #333333;
+    --destaque: #ff5522;
+    --destaque-inverso: #a73917;
+    --fundo-card: #444444;
+}
+
 
 header {
   background-color: var(--destaque);
@@ -334,19 +345,19 @@ article h2 {
 
   main {
     display: grid;  
-    grid-template-columns: auto 30vw 60vw auto;
+    grid-template-columns: auto 300px 1fr auto;
 
   }
 
   section#ficha {
-    grid-column: 2;
+    grid-column: 2 / 3;
     height: 660px;
     position: sticky;
-    top: 60px; 
+    top: 65px; 
   }
 
   section#detalhes {
-    grid-column: 3;
+    grid-column: 3 / 4;
   }
 
   #projeto-container .projeto {
