@@ -18,6 +18,12 @@
 
 }
 
+:focus-visible {
+  outline: 3px solid #4da3ff;
+  outline-offset: 3px;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -84,6 +90,12 @@ header {
   color: var(--destaque);
 }
 
+#menu a:focus-visible {
+  box-shadow: 0 0 0 3px rgba(3, 27, 53, 0.6);
+  border-radius: 6px;
+  padding: 10px;
+}
+
 main {
   display: grid;
   grid-template-columns: auto 90vw auto;
@@ -99,17 +111,17 @@ section#ficha {
 }
 
 section#ficha .foto1 {
-width: 200px;
-aspect-ratio: 1/1;
-object-fit: cover;
-overflow: hidden;
-border-radius: 50%;
-border: 5px solid var(--fundo-card);
-outline: 5px solid var(--info);
-display: block;
-margin: auto;
-margin-bottom: 15px;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--info);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 section#ficha .foto1:hover {
@@ -136,7 +148,6 @@ section#ficha p {
   animation: aparecer 0.8s ease forwards;
 }
 
-
 div#social {
  display: flex;
  justify-content: center;
@@ -157,10 +168,17 @@ div#social:hover {
   background: linear-gradient(to right, rgba(227, 248, 0, 0.578), rgba(169, 18, 215, 0.375));
 }
 
+div#social a:focus-visible {
+  box-shadow: 0 0 0 3px rgba(3, 27, 53, 0.6);
+  border-radius: 6px;
+  padding: 3px;
+
+}
+
 div#social a {
   color: var(--destaque);
   transition: color 0.5s;
-}
+}   
 
 div#social a:hover {
   color: var(--destaque-inverso);
@@ -315,6 +333,12 @@ article h2 {
   border-radius: 8px;
 }
 
+.projeto-foto :focus-visible {
+  box-shadow: 0 0 0 5px rgba(3, 27, 53, 0.871);
+  border-radius: 6px;
+  padding: 10px;
+}
+
 #projeto-container .titulo {
   margin: 10px 0px 3px 0px;
   background-image: linear-gradient(to right, var(--destaque-inverso), transparent);
@@ -331,6 +355,13 @@ article h2 {
   font-weight: bold;
   cursor: pointer;
   margin-top: 10px;
+}
+
+summary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(3, 27, 53, 0.6);
+  border-radius: 6px;
+  padding: 10px;
+
 }
 
 #projeto-container .paragrafo {
