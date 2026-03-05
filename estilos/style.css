@@ -374,6 +374,18 @@ summary:focus-visible {
   transition: height 0.3s ease;
 }
 
+footer#baseboard {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  word-spacing: 1px;
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 3px;
+  margin-top: 15px;
+}
+
+
 @media screen and (min-width: 900px) {
   
   #skill-container {
@@ -388,7 +400,7 @@ summary:focus-visible {
 
   section#ficha {
     grid-column: 2 / 3;
-    height: 660px;
+    height: 618px;
     position: sticky;
     top: 65px; 
   }
