@@ -108,6 +108,7 @@ section#ficha {
   padding: 20px;
   border-radius: 8px;
   grid-column: 2;
+   border: 1px solid var(--destaque-inverso);
 }
 
 section#ficha .foto1 {
@@ -327,7 +328,7 @@ article h2 {
 #projeto-container .direction .foto {
   display: block;
   aspect-ratio: 16/9;
-  max-width: 78vw;
+  max-width: 78vw; /*No celular ta ficando maior, tente diminuir*/
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
