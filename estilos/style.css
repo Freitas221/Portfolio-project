@@ -328,7 +328,7 @@ article h2 {
 #projeto-container .direction .foto {
   display: block;
   aspect-ratio: 16/9;
-  max-width: 78vw; /*No celular ta ficando maior, tente diminuir*/
+  max-width: 75vw; 
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
